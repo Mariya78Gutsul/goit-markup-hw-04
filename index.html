@@ -26,11 +26,15 @@
         </ul>
       </nav>
       <ul class="auth-nav">
-        <li>
-          <a href="mailto:info@example.com" class="item auth-underline">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380991111111" class="item auth-underline">+38 096 111 11 11</a>
+        <li class="item-nav-icon">
+          <a href="mailto:info@example.com" class="item auth-underline"><svg class="contacts-icon">
+            <use href="./images/icon.svg#icon-envelope"></use>
+          </svg>info@devstudio.com</a>
+        </li >
+        <li class="item-nav-icon">
+          <a href="tel:+380991111111" class="item auth-underline"><svg class="contacts-icon">
+            <use href="./images/icon.svg#icon-smartphone"></use>
+          </svg>+38 096 111 11 11</a>
         </li>
       </ul>
     </div>
@@ -51,21 +55,27 @@
     <section class="section">
       <div class="container">
         <ul class="information-section">
-          <li>
+          <li><svg width="65" height="70" class="item-icon">
+            <use href="./images/icon.svg#icon-antenna"></use>
+          </svg>
             <h3 class="feature-list">Внимание к деталям</h3>
             <p class="text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li><svg width="67" height="70" class="item-icon">
+            <use href="./images/icon.svg#icon-clock"></use>
+          </svg>
             <h3 class="feature-list">Пунктуальность</h3>
             <p class="text">
               Задача организации, в особенности же рамки и место обучения
               кадров влечет за собой.
             </p>
           </li>
-          <li>
+          <li><svg width="70" height="54" class="item-icon">
+            <use href="./images/icon.svg#icon-diagram"></use>
+          </svg>
             <h3 class="feature-list">Планирование</h3>
             <p class="text">
               Равным образом консультация с широким активом в значительной
@@ -73,6 +83,11 @@
             </p>
           </li>
           <li>
+            <div class="item-icon">
+            <svg width="70" height="70"  >
+            <use href="./images/icon.svg#icon-astronaut" class="astronaut-icon"></use>
+          </svg>
+          </div>
             <h3 class="feature-list">Современные технологии</h3>
             <p class="text">
               Значимость этих проблем настолько очевидна, что реализация

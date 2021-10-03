@@ -156,6 +156,19 @@ h6 {
 .auth-nav .item:focus {
   color: var(--accent-text-color);
 }
+.item-nav-icon:hover .contacts-icon,
+.item-nav-icon:focus .contacts-icon {
+  fill: var(--accent-text-color);
+}
+.item-nav-icon:hover,
+.item-nav-icon:focus {
+  color: var(--accent-text-color);
+}
+.contacts-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
 .container-heder {
   display: flex;
   align-items: center;
@@ -227,6 +240,17 @@ h6 {
 }
 .information-section :not(:nth-child(4n)) {
   margin-right: 30px;
+}
+.item-icon {
+  width: 270px;
+  height: 120px;
+  background: var(--titel-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.item-icon:hover .astronaut-icon,
+.item-icon:focus .astronaut-icon {
+  fill: var(--accent-text-color);
 }
 .feature-list {
   margin-top: 0px;
