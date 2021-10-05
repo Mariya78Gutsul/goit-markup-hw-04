@@ -1,11 +1,3 @@
-/* цвет основного текста color: #757575; */
-/* вторичный цвет текста  color: #212121; */
-/* акцент синий   color: #2196F3; */
-/* белый color: #FFFFFF  */
-/* основной фон  background: # ffffff; */
-/* второстепенный фон  background: #F5F4FA;*/
-/* фон для героя   background:#2f303a; */
-/* цвет рамки для фото портфолио background-color:#EEEEEE */
 :root {
   --primary-text-color: #757575;
   --titel-text-color: #212121;
@@ -86,10 +78,7 @@ h6 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.list-nav a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .list-nav :not(:last-child) {
   margin-right: 50px;
 }
@@ -98,6 +87,8 @@ h6 {
   color: var(--accent-text-color);
 }
 .item {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,7 +132,6 @@ h6 {
   text-align: center;
   background-color: var(--hero-background-color);
   max-width: 1600px;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0px;
@@ -155,10 +145,9 @@ h6 {
   background-size: cover;
   background-position: center;
 }
-hero-title {
+.hero-title {
   margin-bottom: 30px;
   color: var(--white-text-color);
-  background-color: var(--hero-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -191,7 +180,7 @@ hero-title {
   justify-content: space-between;
   flex-direction: row;
 }
-.information-section :not(:nth-child(4n)) {
+.information-section li:not(:last-child) {
   margin-right: 30px;
 }
 .information-section-li {
@@ -265,7 +254,7 @@ hero-title {
   margin-bottom: 10px;
 }
 .text-name {
-  margin: 0px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -330,7 +319,7 @@ hero-title {
 }
 
 .icon-client:hover {
-  color: var(--accent-text-colorr);
+  color: var(--accent-text-color);
   cursor: pointer;
   border-color: var(--accent-text-color);
 }
@@ -461,6 +450,8 @@ hero-title {
 .portfolio-box-photo {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .portfolio-item {
